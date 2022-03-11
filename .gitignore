@@ -9,5 +9,6 @@
 
 # Zsh history
 **/zsh/.zshistory
+**/zsh/.zcompdump
 
 
