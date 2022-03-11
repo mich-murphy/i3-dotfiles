@@ -4,8 +4,8 @@ configuration {
     display-power: "Powermenu:";
     drun-display-format: "{icon} {name}";
     modi: "window,run,drun,power";
-    show-icons: false;
-    icon-theme: "Tela-dark";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
     font: "MonoLisa 11";
 
 }

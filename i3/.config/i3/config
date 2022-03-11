@@ -26,9 +26,9 @@ exec --no-startup-id dunst --config $XDG_CONFIG_HOME/dunst/dunstrc # Notificatio
 bindsym $mod+Return exec kitty 
 
 # Rofi settings
-bindsym $mod+d exec "rofi -modi drun,run -show drun" # Launch applications
-bindsym $mod+Shift+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu # System exit menu
-bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' # Clipboard management
+bindsym $mod+d exec "rofi -modi drun,run -show drun"
+bindsym $mod+Shift+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # App shortcuts
 bindsym $mod+b exec /usr/bin/brave
