@@ -6,7 +6,7 @@ configuration {
     modi: "window,run,drun,power";
     show-icons: true;
     icon-theme: "Papirus-Dark";
-    font: "MonoLisa 11";
+    font: "MonoLisa Nerd Font 11";
 
 }
 
