@@ -29,6 +29,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
 bindsym $mod+Shift+Escape exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+bindsym $mod+x exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # App shortcuts
 bindsym $mod+b exec /usr/bin/brave

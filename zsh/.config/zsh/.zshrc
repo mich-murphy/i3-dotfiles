@@ -20,11 +20,11 @@ autoload -U compinit; compinit
 
 # Autocomplete hidden files
 _comp_options+=(globdots)
-source ~/dotfiles/zsh/external/completion.zsh
+source $XDG_CONFIG_HOME/zsh/external/completion.zsh
 fpath=($ZDOTDIR/external $fpath)
 
 # Fzf tmuxp sessions
-source ~/dotfiles/zsh/external/scripts.sh
+source $XDG_CONFIG_HOME/zsh/external/scripts.sh
 
 # Starship prompt
 eval "$(starship init zsh)"
@@ -52,7 +52,7 @@ bindkey -M vicmd v edit-command-line
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Back directory shortcut
-source ~/dotfiles/zsh/external/bd.zsh
+source $XDG_CONFIG_HOME/zsh/external/bd.zsh
 
 # Configure fuzzy matching fzf
 if [ $(command -v "fzf") ]; then
@@ -64,3 +64,4 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$XDG_CONFIG_HOME/local/bin
 
 rxfetch
+# neofetch
