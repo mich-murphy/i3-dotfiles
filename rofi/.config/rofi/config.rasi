@@ -4,7 +4,7 @@ configuration {
     display-power: "Powermenu:";
     drun-display-format: "{icon} {name}";
     modi: "window,run,drun,power";
-    show-icons: true;
+    show-icons: false;
     icon-theme: "Papirus-Dark";
     font: "MonoLisa Nerd Font 11";
 
