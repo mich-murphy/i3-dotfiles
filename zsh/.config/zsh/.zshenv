@@ -24,7 +24,7 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 # Dotfiles
-export DOTFILES="$HOME/dotfiles"
+export DOTFILES="$HOME/hackfiles"
 
 # Fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
