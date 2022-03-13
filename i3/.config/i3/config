@@ -193,21 +193,21 @@ bindsym $mod+r mode "resize"
 # focus switches when mouse moves over window
 focus_follows_mouse no
 
-# DESIGN
-set $foreground #D9E0EE
-set $background #1E1E2E
-set $black1 #6E6C7E
-set $black2 #988BA2
-set $red #F28FAD
-set $green #ABE9B3
-set $yellow #FAE3B0
-set $blue #96CDFB
-set $magenta #F5C2E7
-set $cyan #89DCEB
-set $white #D9E0EE
+###############################
+#### Gruvbox Material Dark ####
+###############################
+set $background       #282828
+set $foreground       #d4be98
+set $red      #ea6962
+set $orange   #e78a4e
+set $green    #a9b665
+set $blue     #7daea3
+set $purple   #d3869b
+set $aqua     #89b482
+set $darkgray #282828
 
 # class                     border          background      text            indicator       child_border
-client.focused              $background     $yellow         $background     $yellow 
+client.focused              $background     $orange         $background     $orange 
 # client.focused_inactive   $background     $background     $foreground     $background
 client.unfocused            $background     $background     $foreground     $background
 # client.urgent             $red            $black1         $white          $yellow

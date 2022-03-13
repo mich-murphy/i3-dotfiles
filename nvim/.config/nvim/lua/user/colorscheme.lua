@@ -1,11 +1,8 @@
 vim.cmd [[
 try
-  if has('termguicolors')
-    set termguicolors
-  endif
-
-  let g:sonokai_style = 'shusia'
-  colorscheme sonokai
+  set background=dark
+  let g:gruvbox_material_background='soft'
+  colorscheme gruvbox-material
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

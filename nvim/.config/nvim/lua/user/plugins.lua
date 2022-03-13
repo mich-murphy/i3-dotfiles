@@ -65,6 +65,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
   use "sainnhe/sonokai"
+  use "sainnhe/gruvbox-material"
   use {
     "catppuccin/nvim",
     as = "catppuccin"
