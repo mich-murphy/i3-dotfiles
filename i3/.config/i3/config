@@ -16,7 +16,7 @@ exec --no-startup-id pulseaudio --start
 exec --no-startup-id redshift -l -38.14711:144.36069 & # Reduce blue light at night
 exec --no-startup-id $XDG_CONFIG_HOME/local/bin/feh-blur.sh -d # Blur wallpaper
 exec_always --no-startup-id greenclip daemon # Clipboard management for rofi
-exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/wallpaper.jpg # Set wallpaper
+exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/delorean.png # Set wallpaper
 exec --no-startup-id dunst --config $XDG_CONFIG_HOME/dunst/dunstrc # Notifications
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --> don't think this is needed
 # exec --no-startup-id nm-applet # NetworkManager applet --> don't think this is needed
@@ -32,7 +32,7 @@ bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 bindsym $mod+x exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # App shortcuts
-bindsym $mod+b exec /usr/bin/brave
+bindsym $mod+b exec /usr/bin/firefox
 bindsym $mod+v exec kitty -e nvim
 bindsym $mod+Shift+Return exec kitty -e ranger
 
@@ -196,18 +196,18 @@ focus_follows_mouse no
 ###############################
 #### Gruvbox Material Dark ####
 ###############################
-set $background       #282828
-set $foreground       #d4be98
-set $red      #ea6962
-set $orange   #e78a4e
-set $green    #a9b665
-set $blue     #7daea3
-set $purple   #d3869b
-set $aqua     #89b482
-set $darkgray #282828
+set $background       #2b2d3a
+set $foreground       #c5cdd9
+set $red      #ec7279
+set $yellow   #deb974
+set $green    #a0c980
+set $blue     #6cb6eb
+set $purple   #d38aea
+set $cyan     #5dbbc1
+set $darkgray #5c6071
 
 # class                     border          background      text            indicator       child_border
-client.focused              $background     $orange         $background     $orange 
+client.focused              $background     $purple         $background     $purple 
 # client.focused_inactive   $background     $background     $foreground     $background
 client.unfocused            $background     $background     $foreground     $background
 # client.urgent             $red            $black1         $white          $yellow

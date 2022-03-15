@@ -60,6 +60,12 @@ if [ $(command -v "fzf") ]; then
     source /usr/share/fzf/key-bindings.zsh
 fi
 
+export FZF_DEFAULT_OPTS='
+--color=fg:#c5cdd9,bg:#2b2d3a,hl:#d38aea 
+--color=fg+:#c5cdd9,bg+:#2b2d3a,hl+:#d38aea 
+--color=info:#deb974,prompt:#a0c980,pointer:#d38aea
+--color=marker:#d38aea,spinner:#deb974,header:#3f445b'
+
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$XDG_CONFIG_HOME/local/bin
 

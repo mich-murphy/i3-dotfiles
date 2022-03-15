@@ -11,7 +11,7 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
-export BROWSER="brave"
+export BROWSER="firefox"
 
 # Zsh config files
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
