@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
+  edge = {
+    loaded = true,
+    path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/edge",
+    url = "https://github.com/sainnhe/edge"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -138,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/gruvbox-material",
-    url = "https://github.com/sainnhe/gruvbox-material"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
-  sonokai = {
-    loaded = true,
-    path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/sonokai",
-    url = "https://github.com/sainnhe/sonokai"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -253,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-hexokinase"] = {
+    loaded = true,
+    path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/vim-hexokinase",
+    url = "https://github.com/RRethy/vim-hexokinase"
   },
   ["vim-mundo"] = {
     loaded = true,
