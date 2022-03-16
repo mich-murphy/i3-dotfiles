@@ -1,5 +1,5 @@
 #! /bin/sh
-output='/home/eric/pictures/screenshots/%Y-%m-%d-%T-screenshot.png'
+output='/home/mm/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png'
 
 case "$1" in
 	"select") scrot "$output" --select --line mode=edge || exit ;;
