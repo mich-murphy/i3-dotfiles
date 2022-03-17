@@ -31,7 +31,7 @@ bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 bindsym $mod+equal exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # App shortcuts
-bindsym $mod+b exec /usr/bin/firefox
+bindsym $mod+b exec /usr/bin/brave
 bindsym $mod+v exec kitty -e nvim
 bindsym $mod+Shift+Return exec kitty -e ranger
 
