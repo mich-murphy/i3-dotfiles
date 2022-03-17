@@ -1,13 +1,3 @@
-###############################################################################
-# Btop Edge Theme 
-#
-# Neon Variant
-# Inspired by https://github.com/sainnhe/edge
-#
-# Written by: Hackenbacker 
-#
-###############################################################################
-
 # Main background, empty for terminal default, need to be empty if you want transparent background
 theme[main_bg]=""
 

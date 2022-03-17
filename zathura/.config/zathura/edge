@@ -1,13 +1,3 @@
-###############################################################################
-# Zathura Edge Theme 
-#
-# Neon Variant
-# Inspired by https://github.com/sainnhe/edge
-#
-# Written by: Hackenbacker 
-#
-###############################################################################
-
 set notification-error-bg       "#2b2d3a" # bg0
 set notification-error-fg       "#ec7279" # red
 set notification-warning-bg     "#2b2d3a" # bg0

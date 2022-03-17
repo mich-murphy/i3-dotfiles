@@ -52,7 +52,7 @@ bindsym XF86MonBrightnessDown exec $XDG_CONFIG_HOME/local/bin/changebrightness.s
 bindsym XF86MonBrightnessUp exec $XDG_CONFIG_HOME/local/bin/changebrightness.sh up 
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # Lockscreen
 set $i3lockwall sh $XDG_CONFIG_HOME/local/bin/lock.sh # Lockscreen script

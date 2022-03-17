@@ -1,6 +1,5 @@
 ## Configuration file for CAVA. Default values are commented out. Use either ';' or '#' for commenting.
 
-
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
@@ -133,8 +132,6 @@ gradient_color_5 = '#47b3f0'
 gradient_color_6 = '#3cb8e2' 
 gradient_color_7 = '#48bad1' 
 gradient_color_8 = '#5dbbc1' 
-
-
 
 [smoothing]
 

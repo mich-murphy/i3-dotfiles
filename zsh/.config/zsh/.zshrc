@@ -69,5 +69,5 @@ export FZF_DEFAULT_OPTS='
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$XDG_CONFIG_HOME/local/bin
 
-# rxfetch
+rxfetch
 # neofetch
