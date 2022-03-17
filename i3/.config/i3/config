@@ -18,8 +18,7 @@ exec --no-startup-id $XDG_CONFIG_HOME/local/bin/feh-blur.sh -d # Blur wallpaper
 exec_always --no-startup-id greenclip daemon # Clipboard management for rofi
 exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/delorean.png # Set wallpaper
 exec --no-startup-id dunst --config $XDG_CONFIG_HOME/dunst/dunstrc # Notifications
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --> don't think this is needed
-# exec --no-startup-id nm-applet # NetworkManager applet --> don't think this is needed
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # set $refresh_i3status killall -SIGUSR1 i3status --> don't think this is needed
 
 # start a terminal
@@ -27,7 +26,7 @@ bindsym $mod+Return exec kitty
 
 # Rofi settings
 bindsym $mod+slash exec "rofi -modi drun,run -show drun"
-bindsym $mod+x exec rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $mod+Shift+x exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym $mod+c exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 bindsym $mod+equal exec rofi -show calc -modi calc -no-show-match -no-sort
 
@@ -57,7 +56,7 @@ bindsym $mod+Shift+q kill
 
 # Lockscreen
 set $i3lockwall sh $XDG_CONFIG_HOME/local/bin/lock.sh # Lockscreen script
-bindsym $mod+Escape exec --no-startup-id $i3lockwall
+bindsym $mod+x exec --no-startup-id $i3lockwall
 
 # Screenshots
 bindsym Print exec $XDG_CONFIG_HOME/local/bin/screenshot.sh
