@@ -229,7 +229,7 @@ client.unfocused            $background     $background     $foreground     $bac
 
 # enable gaps between windows
 for_window [class=".*"] border pixel 2
-gaps inner 20
+gaps inner 10
 gaps top 43
 # gaps outer 10
 # gaps bottom 43
