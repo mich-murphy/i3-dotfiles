@@ -1,0 +1,5 @@
+#! /bin/bash
+
+sleep 2
+$XDG_CONFIG_HOME/polybar/launch.sh
+feh --bg-fill $HOME/Pictures/wallpapers/delorean.png

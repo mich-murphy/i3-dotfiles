@@ -5,7 +5,7 @@ configuration {
     drun-display-format: "{icon} {name}";
     modi: "window,run,drun,power";
     show-icons: false;
-    icon-theme: "Papirus-Dark";
+    icon-theme: "Tela-dark";
     font: "MonoLisa Nerd Font 11";
 
 }
