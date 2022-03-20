@@ -2,6 +2,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 arandr
+autorandr
 autotiling-git
 base
 bash-language-server
@@ -17,6 +18,7 @@ diff-so-fancy
 dmenu
 dunst
 efibootmgr
+exa
 fd
 feh
 firefox
@@ -43,7 +45,6 @@ linux-firmware
 lxappearance
 man-db
 man-pages
-neofetch
 neovim
 networkmanager
 nodejs
@@ -51,6 +52,7 @@ npm
 nsxiv
 openssh
 pamixer
+pavucontrol
 picom-git
 playerctl
 polkit
