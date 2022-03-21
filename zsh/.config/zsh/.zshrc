@@ -68,6 +68,9 @@ export FZF_DEFAULT_OPTS='
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$XDG_CONFIG_HOME/local/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/node_modules/.bin
+export PATH=$PATH:$XDG_CONFIG_HOME/local/share/gem/ruby/3.0.0/bin
 
 rxfetch
 # neofetch

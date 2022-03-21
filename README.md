@@ -44,3 +44,32 @@ stow nvim
 ```
 
 List of installed packages can be found [here in the repo](https://github.com/mrhackendbacker/Hackfiles/blob/master/packages/.pacman.list)
+
+###Neovim
+Config was mostly taken from [this repo](https://github.com/LunarVim/Neovim-from-scratch#get-healthy), with some tweaks to plugins and keybindings.
+
+The following instructions are taken from the aforementioned repo:
+
+Open nvim and enter the following:
+```
+:checkhealth
+```
+
+You'll probably notice you don't have support for copy/paste, also that python and node haven't been setup
+
+First we'll fix copy/paste
+```
+sudo pacman -S xsel
+```
+
+Next we need to install python support (node is optional)
+
+- Neovim python support
+```
+pip install pynvim
+```
+
+- Neovim node support
+```
+npm i -g neovim
+```
