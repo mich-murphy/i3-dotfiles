@@ -45,7 +45,7 @@ stow nvim
 
 List of installed packages can be found [here in the repo](https://github.com/mrhackendbacker/Hackfiles/blob/master/packages/.pacman.list)
 
-###Neovim
+## Neovim
 Config was mostly taken from [this repo](https://github.com/LunarVim/Neovim-from-scratch#get-healthy), with some tweaks to plugins and keybindings.
 
 The following instructions are taken from the aforementioned repo:
