@@ -48,8 +48,6 @@ List of installed packages can be found [here in the repo](https://github.com/mr
 ## Neovim
 Config was mostly taken from [this repo](https://github.com/LunarVim/Neovim-from-scratch#get-healthy), with some tweaks to plugins and keybindings.
 
-The following instructions are taken from the aforementioned repo:
-
 Open nvim and enter the following:
 ```
 :checkhealth
