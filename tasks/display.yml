@@ -1,0 +1,6 @@
+- name: Install xrandr
+  community.general.pacman:
+    name: 
+      - xrandr
+      - autorandr
+    state: latest

@@ -3,14 +3,14 @@
     - dotfiles_repo: git@github.com:mich-murphy/dotfiles.git
   pre_tasks:
   - name: System update
-    become: yes
+    become: true
     community.general.pacman:
       update_cache: yes
-      ugrade: yes
+      upgrade: yes
     tags:
       - zsh
       - python
 
   tasks:
-  - include: tasks/zsh.yml
-  - include: tasks/python.yml
+  - include_tasks: tasks/zsh.yml
+  - include_tasks: tasks/python.yml

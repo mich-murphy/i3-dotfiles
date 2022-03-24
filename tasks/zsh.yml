@@ -1,5 +1,5 @@
 - name: Install zsh
-  become: yes
+  become: true
   community.general.pacman: 
     name: zsh
     state: latest
