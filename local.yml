@@ -1,0 +1,16 @@
+- hosts: localhost
+  vars:
+    - dotfiles_repo: git@github.com:mich-murphy/dotfiles.git
+  pre_tasks:
+  - name: System update
+    become: yes
+    community.general.pacman:
+      update_cache: yes
+      ugrade: yes
+    tags:
+      - zsh
+      - python
+
+  tasks:
+  - include: tasks/zsh.yml
+  - include: tasks/python.yml

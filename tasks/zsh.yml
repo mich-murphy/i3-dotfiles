@@ -1,0 +1,11 @@
+- name: Install zsh
+  become: yes
+  community.general.pacman: 
+    name: zsh
+    state: latest
+  tags: 
+    - zsh
+- name: Change shell
+  shell: chsh -s $(which zsh)
+  tags: 
+    - zsh

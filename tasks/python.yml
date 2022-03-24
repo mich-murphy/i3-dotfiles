@@ -1,0 +1,16 @@
+- name: Install python
+  become: yes
+  community.general.pacman:
+    name: 
+      - python
+      - python-pip
+    state: latest
+  tags: 
+    - python
+- name: Install black
+  pip:
+    name: black
+    state: latest
+  tags: 
+    - python
+

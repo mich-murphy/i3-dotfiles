@@ -12,7 +12,6 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id $XDG_CONFIG_HOME/polybar/launch.sh # Launch polybar
 exec_always --no-startup-id autotiling # BSPWM like tiling
 exec --no-startup-id picom --experimental-backends --config $XDG_CONFIG_HOME/picom/picom.conf -b # Picom compositor
-exec --no-startup-id pulseaudio --start
 exec --no-startup-id redshift -l -38.14711:144.36069 & # Reduce blue light at night
 exec --no-startup-id $XDG_CONFIG_HOME/local/bin/feh-blur.sh -d # Blur wallpaper
 exec_always --no-startup-id greenclip daemon # Clipboard management for rofi
@@ -20,6 +19,7 @@ exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/delorean.png # Set 
 exec --no-startup-id dunst --config $XDG_CONFIG_HOME/dunst/dunstrc # Notifications
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # set $refresh_i3status killall -SIGUSR1 i3status --> don't think this is needed
+# exec --no-startup-id pulseaudio --start --> moved to xinitrc
 
 # start a terminal
 bindsym $mod+Return exec kitty 
