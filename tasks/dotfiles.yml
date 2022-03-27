@@ -23,7 +23,6 @@
       - pulseaudio
       - pulseaudio-alsa
       - pamixer
-      - nsxiv
       - libnotify
       - dunst
       - fd
