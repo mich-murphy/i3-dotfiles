@@ -7,7 +7,7 @@
 - name: create mm user
   user:
     name: mm
-    password: {{ user_password }}
+    password: "{{ user_password }}"
     groups: wheel
 
 - lineinfile:
