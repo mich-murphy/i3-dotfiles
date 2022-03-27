@@ -11,9 +11,6 @@
 **/zsh/.zshistory
 **/zsh/.zcompdump
 
-# Fonts
-# **/fonts
-
 # Ranger temp files
 **/ranger/colorschemes/__*
 
