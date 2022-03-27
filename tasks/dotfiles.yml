@@ -46,7 +46,7 @@
   tags: dotfiles
   git:
     repo: https://aur.archlinux.org/yay.git
-    dest: /home/mm/git/
+    dest: /home/mm/git/yay
     clone: yes
 
 - name: make yay package
