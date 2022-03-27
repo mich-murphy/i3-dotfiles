@@ -50,5 +50,6 @@
     clone: yes
 
 - name: make yay package
+  become_user: mm
   tags: dotfiles
   shell: cd /home/mm/git/yay/ && makepkg -si
