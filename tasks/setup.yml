@@ -7,7 +7,7 @@
 - name: create mm user
   user:
     name: mm
-    password: "{{ password | password_hash('sha512') }}"
+    password: $6$jkw3ST8ONcMgA8Zl$weIYelXXNMCos5sNEzbKPnaBZv62LQF.NXR1H.N/AgG.IR6YFcvTU9SeqGYYaUU7r1IYGVxGLdjgIyekPi4XR.
     groups: wheel
     update_password: on_create
 
