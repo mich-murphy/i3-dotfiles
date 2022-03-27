@@ -4,8 +4,10 @@
     name: zsh
     state: latest
   tags: 
+    - core
     - zsh
 - name: Change shell
   shell: chsh -s $(which zsh)
   tags: 
+    - core
     - zsh

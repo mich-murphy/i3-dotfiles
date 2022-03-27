@@ -1,16 +1,16 @@
+---
 - hosts: localhost
   vars:
     - dotfiles_repo: git@github.com:mich-murphy/dotfiles.git
+    - source_key: "./.ssh/id_rsa"
+    - dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
   pre_tasks:
   - name: System update
     become: true
-    community.general.pacman:
+    pacman:
       update_cache: yes
       upgrade: yes
-    tags:
-      - zsh
-      - python
+    tags: always
 
   tasks:
-  - include_tasks: tasks/zsh.yml
-  - include_tasks: tasks/python.yml
+  - include_tasks: tasks/setup.yml

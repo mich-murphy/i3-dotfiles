@@ -1,0 +1,15 @@
+- name: Setup user
+  user:
+    - name: mm
+      group: wheel
+      shell: /bin/bash
+- name: Install manuals
+  pacman:
+    name:
+      - man
+      - man-pages
+      - tldr
+    state:
+      - latest
+  tags:
+    - setup
