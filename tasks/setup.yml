@@ -24,6 +24,7 @@
 
 - name: install core system packages
   tags: setup
+  become_user: mm
   package:
     name:
       - man
