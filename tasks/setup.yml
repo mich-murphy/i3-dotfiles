@@ -10,13 +10,11 @@
     password: {{ user_password }}
     groups: wheel
 
-- name: add sudoers file for mm
-  copy: 
-    src: sudoer_mm
-    dest: /etc/sudoers.d/mm
-    owner: root
-    group: wheel
-    mode: 0440
+- lineinfile:
+   path: /etc/sudoers
+   state: present
+   regexp: '^%wheel\s'
+   line: '%wheel ALL=(ALL) ALL'
 
 - name: install core system packages
   package:
