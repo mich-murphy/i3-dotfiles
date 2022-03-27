@@ -25,7 +25,6 @@
       - tldr
       - xorg
       - openssh
-      - networkmanager
       - xsel
       - udiskie
       - lxappearance
