@@ -7,8 +7,9 @@
 - name: create mm user
   user:
     name: mm
-    password: "{{ user_password }}"
+    password: "{{ password | password_hash('sha512') }}"
     groups: wheel
+    update_password: on_create
 
 - lineinfile:
    path: /etc/sudoers
