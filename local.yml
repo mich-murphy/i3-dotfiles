@@ -5,19 +5,12 @@
     - dotfiles_repo: git@github.com:mich-murphy/dotfiles.git
     - source_key: "./.ssh/id_rsa"
     - dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
-  vars_prompt:
-    - name: "user_password"    
-      prompt: "Enter a password for the user"    
-      private: yes    
-      encrypt: "md5_crypt" #need to have python-passlib installed in local machine
-      confirm: yes    
-      salt_size: 7
   pre_tasks:
   - name: System update
+    tags: always
     pacman:
       update_cache: yes
       upgrade: yes
-    tags: always
 
   tasks:
   - include_tasks: tasks/setup.yml

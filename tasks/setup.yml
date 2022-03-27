@@ -1,4 +1,12 @@
 ---
+- vars_prompt:
+    name: "user_password"    
+    prompt: "Enter a password for the user"    
+    private: yes    
+    encrypt: "md5_crypt" #need to have python-passlib installed in local machine
+    confirm: yes    
+    salt_size: 7
+
 - name: install sudo
   package:
     name: sudo
@@ -26,32 +34,9 @@
       - openssh
       - networkmanager
       - xsel
-      - fzf
-      - scrot
       - udiskie
       - lxappearance
       - xcape
-      - ripgrep
-      - tmux
-      - tmuxp
-      - dunst
-      - libnotify
-      - diff-so-fancy
-      - i3-gaps
-      - i3lock
-      - rofi
-      - feh
-      - zsh
-      - zsh-completions
-      - zsh-syntax-highlighting
-      - neovim
-      - python-neovim
-      - python2-neovim
-      - ruby-neovim
-      - nodejs-neovim
-      - yarn
-      - kitty
-      - firefox
     state: latest
   tags:
     - setup
