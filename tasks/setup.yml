@@ -1,14 +1,40 @@
-- name: Setup user
-  user:
-    - name: mm
-      group: wheel
-      shell: /bin/bash
-- name: Install manuals
-  pacman:
+- name: Install core system packages
+  package:
     name:
       - man
       - man-pages
       - tldr
+      - xorg
+      - openssh
+      - networkmanager
+      - xsel
+      - fzf
+      - scrot
+      - udiskie
+      - lxappearance
+      - xcape
+      - ripgrep
+      - tmux
+      - tmuxp
+      - dunst
+      - libnotify
+      - diff-so-fancy
+      - i3-gaps
+      - i3lock
+      - polybar
+      - rofi
+      - feh
+      - zsh
+      - zsh-completions
+      - zsh-syntax-highlighting
+      - neovim
+      - python-neovim
+      - python2-neovim
+      - ruby-neovim
+      - nodejs-neovim
+      - yarn
+      - kitty
+      - firefox
     state:
       - latest
   tags:
