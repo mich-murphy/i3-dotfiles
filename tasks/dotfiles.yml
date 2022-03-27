@@ -40,7 +40,7 @@
       
 - name: change shell
   tags: dotfiles
-  shell: chsh -s $(which zsh)
+  shell: chsh -s /usr/sbin/zsh
 
 - name: clone yay repo
   tags: dotfiles
