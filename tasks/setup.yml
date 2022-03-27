@@ -1,23 +1,28 @@
 ---
 - name: install sudo
+  tags: setup
   package:
     name: sudo
     state: latest
 
 - name: create mm user
+  tags: setup
   user:
     name: mm
     password: $6$jkw3ST8ONcMgA8Zl$weIYelXXNMCos5sNEzbKPnaBZv62LQF.NXR1H.N/AgG.IR6YFcvTU9SeqGYYaUU7r1IYGVxGLdjgIyekPi4XR.
     groups: wheel
     create_home: yes
 
-- lineinfile:
+- name: give mm sudo priviliges
+  tags: setup
+  lineinfile:
    path: /etc/sudoers
    state: present
    regexp: '^%wheel\s'
    line: '%wheel ALL=(ALL) ALL'
 
 - name: install core system packages
+  tags: setup
   package:
     name:
       - man
@@ -33,5 +38,3 @@
       - xcape
       - unzip
     state: latest
-  tags:
-    - setup
