@@ -5,16 +5,16 @@
     name: sudo
     state: present
 
-- name: create mm user
+- name: create user
   tags: setup
   user:
-    name: mm
+    name: "{{ user }}"
     password: $6$jkw3ST8ONcMgA8Zl$weIYelXXNMCos5sNEzbKPnaBZv62LQF.NXR1H.N/AgG.IR6YFcvTU9SeqGYYaUU7r1IYGVxGLdjgIyekPi4XR.
     groups: wheel
     shell: /bin/bash
     create_home: yes
 
-- name: give mm sudo priviliges
+- name: give user sudo priviliges
   tags: setup
   lineinfile:
    path: /etc/sudoers
@@ -23,6 +23,7 @@
    line: '%wheel ALL=(ALL) ALL'
 
 - name: install core system packages
+  become_user: "{{ user }}"
   tags: setup
   pacman:
     name:
