@@ -1,0 +1,57 @@
+- name: install requirements from package manager
+  tags: dotfiles
+  package: 
+    name:
+      - zsh
+      - zsh-completions
+      - zsh-syntax-highlighting
+      - kitty
+      - i3-gaps
+      - i3lock
+      - autorandr
+      - feh
+      - tmux
+      - tmuxp
+      - stow
+      - scrot
+      - rofi
+      - rofi-calc
+      - redshift
+      - ranger
+      - python
+      - python-pip
+      - pulseaudio
+      - pulseaudio-alsa
+      - pamixer
+      - nsxiv
+      - libnotify
+      - dunst
+      - fd
+      - diff-so-fancy
+      - exa
+      - ripgrep
+      - firefox
+      - firewalld
+      - fzf
+      - neovim
+      - python-neovim
+      - ruby-neovim
+      - nodejs-neovim
+      - nodejs
+      - yarn
+    state: latest
+      
+- name: change shell
+  tags: dotfiles
+  shell: chsh -s $(which zsh)
+
+- name: clone yay repo
+  tags: dotfiles
+  git:
+    repo: https://aur.archlinux.org/yay.git
+    dest: /home/mm/git/
+    clone: yes
+
+- name: make yay package
+  tags: dotfiles
+  shell: cd /home/mm/git/yay/ && makepkg -si

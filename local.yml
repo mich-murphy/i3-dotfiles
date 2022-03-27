@@ -15,3 +15,4 @@
 
   tasks:
   - include_tasks: tasks/setup.yml
+  - include_tasks: tasks/dotfiles.yml

@@ -30,11 +30,11 @@
       - man-pages
       - xorg
       - xorg-xinit
-      - i3-gaps
       - openssh
       - xsel
       - udiskie
       - lxappearance
       - xcape
       - unzip
+      - polkit
     state: latest
