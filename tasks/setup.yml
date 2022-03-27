@@ -22,13 +22,16 @@
     name:
       - man
       - man-pages
-      - tldr
       - xorg
+      - xorg-xinit
+      - kitty
+      - i3-gaps
       - openssh
       - xsel
       - udiskie
       - lxappearance
       - xcape
+      - unzip
     state: latest
   tags:
     - setup
