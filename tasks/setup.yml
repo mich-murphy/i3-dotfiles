@@ -39,7 +39,6 @@
       - diff-so-fancy
       - i3-gaps
       - i3lock
-      - polybar
       - rofi
       - feh
       - zsh
