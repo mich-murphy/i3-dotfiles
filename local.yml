@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   become: true
   vars:
     - dotfiles_repo: git@github.com:mich-murphy/dotfiles.git
