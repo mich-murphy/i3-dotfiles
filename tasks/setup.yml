@@ -1,7 +1,13 @@
 ---
+- name: install sudo
+  package:
+    name: sudo
+    state: latest
+
 - name: create mm user
   user:
     name: mm
+    password: {{ user_password }}
     groups: wheel
 
 - name: add sudoers file for mm
@@ -12,7 +18,7 @@
     group: wheel
     mode: 0440
 
-- name: Install core system packages
+- name: install core system packages
   package:
     name:
       - man
@@ -49,7 +55,6 @@
       - yarn
       - kitty
       - firefox
-    state:
-      - latest
+    state: latest
   tags:
     - setup
