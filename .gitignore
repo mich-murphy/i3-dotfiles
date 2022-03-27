@@ -12,7 +12,7 @@
 **/zsh/.zcompdump
 
 # Fonts
-**/fonts
+# **/fonts
 
 # Ranger temp files
 **/ranger/colorschemes/__*
