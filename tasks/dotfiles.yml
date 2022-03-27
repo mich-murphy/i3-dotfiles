@@ -34,7 +34,6 @@
       - fzf
       - neovim
       - python-neovim
-      - ruby-neovim
       - nodejs-neovim
       - nodejs
       - yarn
