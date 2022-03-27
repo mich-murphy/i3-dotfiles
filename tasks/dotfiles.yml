@@ -34,7 +34,6 @@
       - fzf
       - neovim
       - python-neovim
-      - nodejs-neovim
       - nodejs
       - yarn
     state: latest
