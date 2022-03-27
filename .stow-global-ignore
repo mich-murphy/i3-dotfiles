@@ -1,5 +1,6 @@
 # ignore ansible setup
 /tasks
+/files
 
 # ignore ssh setup folder
 /.ssh

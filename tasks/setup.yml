@@ -1,3 +1,17 @@
+---
+- name: create mm user
+  user:
+    name: mm
+    groups: wheel
+
+- name: add sudoers file for mm
+  copy: 
+    src: /files/sudoer_mm
+    dest: /etc/sudoers.d/mm
+    owner: root
+    group: wheel
+    mode: 0440
+
 - name: Install core system packages
   package:
     name:

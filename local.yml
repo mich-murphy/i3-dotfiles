@@ -1,12 +1,12 @@
 ---
-- hosts: localhost
+- hosts: all
+  become: true
   vars:
     - dotfiles_repo: git@github.com:mich-murphy/dotfiles.git
     - source_key: "./.ssh/id_rsa"
     - dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
   pre_tasks:
   - name: System update
-    become: true
     pacman:
       update_cache: yes
       upgrade: yes
