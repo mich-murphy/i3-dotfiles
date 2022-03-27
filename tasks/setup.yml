@@ -3,7 +3,7 @@
   tags: setup
   pacman:
     name: sudo
-    state: latest
+    state: present
 
 - name: create mm user
   tags: setup
@@ -37,4 +37,4 @@
       - xcape
       - unzip
       - polkit
-    state: latest
+    state: present

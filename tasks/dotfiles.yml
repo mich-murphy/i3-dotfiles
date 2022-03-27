@@ -36,13 +36,14 @@
       - python-neovim
       - nodejs
       - yarn
-    state: latest
+    state: present
       
 - name: change shell
   tags: dotfiles
   shell: chsh -s /usr/sbin/zsh
 
 - name: clone yay repo
+  become: true
   become_user: mm
   tags: dotfiles
   git:
