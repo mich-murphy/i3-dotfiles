@@ -43,6 +43,7 @@
   shell: chsh -s /usr/sbin/zsh
 
 - name: clone yay repo
+  become_user: mm
   tags: dotfiles
   git:
     repo: https://aur.archlinux.org/yay.git
