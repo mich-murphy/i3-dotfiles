@@ -1,7 +1,7 @@
 ---
 - name: install sudo
   tags: setup
-  package:
+  pacman:
     name: sudo
     state: latest
 
@@ -24,14 +24,12 @@
 
 - name: install core system packages
   tags: setup
-  become_user: mm
-  package:
+  pacman:
     name:
       - man
       - man-pages
       - xorg
       - xorg-xinit
-      - kitty
       - i3-gaps
       - openssh
       - xsel
