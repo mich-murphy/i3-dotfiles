@@ -6,7 +6,7 @@
 
 - name: add sudoers file for mm
   copy: 
-    src: /files/sudoer_mm
+    src: sudoer_mm
     dest: /etc/sudoers.d/mm
     owner: root
     group: wheel
