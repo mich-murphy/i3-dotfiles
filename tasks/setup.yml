@@ -12,6 +12,18 @@
     name: sudo
     state: latest
 
+- name: install python and pip
+  pacman:
+    name:
+      - python
+      - python-pip
+    state: latest
+
+- name: install passlib
+  pip:
+    name: passlib
+    state: latest
+
 - name: create mm user
   user:
     name: mm
