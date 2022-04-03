@@ -31,7 +31,7 @@ Requirements:
 
 Clone repository
 ```
-git clone https://github.com/mrhackendbacker/Hackfiles.git ~
+git clone https://github.com/mrhackendbacker/.dotfiles.git ~
 ```
 
 Run `stow` to symlink all folders (ignoring README.md etc.)
