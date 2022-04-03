@@ -25,6 +25,8 @@ Here are my setup files for my Arch install using i3 gaps. This is currently bei
 ![btop, kitty and ranger screenshot](https://github.com/mrhackendbacker/Hackfiles/blob/master/wallpapers/Pictures/screenshots/2022-03-17-21:38:31-screenshot.png)
 
 ## Installing
+Complete ansible install can be found at [this repo](https://github.com/mich-murphy/ansible)
+
 Requirements:
 - `git`
 - `stow`
