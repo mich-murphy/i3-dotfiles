@@ -244,11 +244,6 @@ _G.packer_plugins = {
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["vim-hexokinase"] = {
-    loaded = true,
-    path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/vim-hexokinase",
-    url = "https://github.com/RRethy/vim-hexokinase"
-  },
   ["vim-mundo"] = {
     loaded = true,
     path = "/home/mm/.config/local/share/nvim/site/pack/packer/start/vim-mundo",

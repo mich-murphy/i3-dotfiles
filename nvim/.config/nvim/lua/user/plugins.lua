@@ -65,10 +65,6 @@ return packer.startup(function(use)
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
   use "sainnhe/edge"
-  use {
-    "RRethy/vim-hexokinase",
-    run = "make hexokinase"
-  }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
