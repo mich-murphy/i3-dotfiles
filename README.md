@@ -24,9 +24,18 @@ Here are my setup files for my Arch install using i3 gaps. This is currently bei
 ![nvim, spotify-tui and cava screenshot](https://github.com/mrhackendbacker/Hackfiles/blob/master/wallpapers/Pictures/screenshots/2022-03-17-21:38:58-screenshot.png)
 ![btop, kitty and ranger screenshot](https://github.com/mrhackendbacker/Hackfiles/blob/master/wallpapers/Pictures/screenshots/2022-03-17-21:38:31-screenshot.png)
 
-## Installing
-Complete ansible install can be found at [this repo](https://github.com/mich-murphy/ansible)
+## Ansible Install
+Complete ansible install can be found at [this repo](https://github.com/mich-murphy/ansible
 
+Following install spotifyd config must be completed:
+1. create ~/.config/spotifyd/pass.txt (will look to use ansible vault in future)
+2. enable systemd service
+```
+sudo systemctl --user enable spotifyd.service
+sudo systemctl --user start spotifyd.service
+```
+
+## Installing
 Requirements:
 - `git`
 - `stow`
