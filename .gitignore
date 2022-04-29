@@ -16,3 +16,6 @@
 
 # Spotifyd password
 **/spotifyd/pass.txt
+
+# Qtile temp files
+**/qtile/__*
