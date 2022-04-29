@@ -7,8 +7,6 @@ fi
 
 xrdb -merge ~/.config/X11/.Xresources
 
-# reset wallpaper
-~/.fehbg &
 # auto mount drives
 udiskie &
 # start audio
@@ -17,4 +15,4 @@ pipewire &
 setxkbmap -option "caps:ctrl_modifier";xcape -e "Caps_Lock=Escape"&
 
 xset +fp ~/.local/share/fonts
-exec i3
+exec qtile start

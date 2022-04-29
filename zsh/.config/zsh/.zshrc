@@ -1,7 +1,8 @@
 # Start i3
 if [ "$(tty)" = "/dev/tty1" ];
 then
-    pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+   # pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+   exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
 source "$XDG_CONFIG_HOME/zsh/aliases"
@@ -72,5 +73,4 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/node_modules/.bin
 export PATH=$PATH:$XDG_CONFIG_HOME/local/share/gem/ruby/3.0.0/bin
 
-rxfetch
-# neofetch
+pfetch
