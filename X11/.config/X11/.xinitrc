@@ -15,4 +15,5 @@ pipewire &
 setxkbmap -option "caps:ctrl_modifier";xcape -e "Caps_Lock=Escape"&
 
 xset +fp ~/.local/share/fonts
-exec qtile start
+# exec qtile start
+exec i3
