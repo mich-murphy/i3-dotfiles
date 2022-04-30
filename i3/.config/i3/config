@@ -210,8 +210,8 @@ bindsym $mod+r mode "resize"
 focus_follows_mouse no
 
 # Edge Neon
-set $background       #2b2d3a
-set $foreground       #c5cdd9
+set $background #2b2d3a
+set $foreground #c5cdd9
 set $red      #ec7279
 set $yellow   #deb974
 set $green    #a0c980
