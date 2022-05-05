@@ -63,7 +63,7 @@ Or `stow` individual folders e.g.
 stow nvim
 ```
 
-List of installed packages can be found [here in the repo](https://github.com/mrhackendbacker/Hackfiles/blob/master/packages/.pacman.list)
+List of installed packages via pacman can be found [here](https://github.com/mich-murphy/ansible/blob/master/tasks/pacman.yml), a list of packages from aur can be found [here](https://github.com/mich-murphy/ansible/blob/master/tasks/aur.yml) 
 
 ## Neovim
 Config was initially guided by [this repo](https://github.com/LunarVim/Neovim-from-scratch#get-healthy).
