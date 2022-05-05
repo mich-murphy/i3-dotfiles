@@ -4,7 +4,7 @@ Here are my setup files for my Arch install using i3 gaps. This is currently bei
 In the unix world programs are commonly configured with files in your home directory. Any file or directory name that starts with a dot/period is considered hidden, and in a default view will not be displayed - thus the name dotfiles.
 
 ## Management
-I manage dotfiles with gnu stow. This allows me to keep a versioned directory of all my config files, that are virtually linked into place via a single command. This makes sharing these files among many users and computers super simple.
+I manage dotfiles with gnu stow. This allows me to keep a versioned directory of all my config files, that are virtually linked into place via a single command. This makes sharing these files among many users and computers super simple. Instructions for installation with gnu stow can be found [here](#installing)
 
 ## Ansible Install
 Complete Ansible install can be found at [this repo](https://github.com/mich-murphy/ansible). Ansible is a tool created by Redhat, which manages server installations. This can be configured to run on localhost and allows for a fully automated installation.
