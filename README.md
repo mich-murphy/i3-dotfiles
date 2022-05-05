@@ -1,5 +1,9 @@
 # Dotfiles
-Here are my setup files for my Arch install using i3 gaps. This is currently being used for a laptop, whicm explains some scripts and polybar modules. 
+Here are my setup files for my Arch install using i3 gaps. This is currently being used for a laptop, which explains some scripts and polybar modules. 
+
+In the unix world programs are commonly configured with files in your home directory. Any file or directory name that starts with a dot/period is considered hidden, and in a default view will not be displayed - thus the name dotfiles.
+
+I manage dotfiles with gnu stow. This allows me to keep a versioned directory of all my config files, that are virtually linked into place via a single command. This makes sharing these files among many users and computers super simple.
 
 ## Info
 - OS: Arch
@@ -57,7 +61,9 @@ stow nvim
 List of installed packages can be found [here in the repo](https://github.com/mrhackendbacker/Hackfiles/blob/master/packages/.pacman.list)
 
 ## Neovim
-Config was mostly taken from [this repo](https://github.com/LunarVim/Neovim-from-scratch#get-healthy), with some tweaks to plugins and keybindings.
+Config was initially guided by [this repo](https://github.com/LunarVim/Neovim-from-scratch#get-healthy).
+
+I've since made a number of changes to the config to remove any errors, and made some tweaks to plugins and keybindings.
 
 Open nvim and enter the following:
 ```
