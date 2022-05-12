@@ -32,19 +32,6 @@ decor = {
     "highlight_color": colors['background'],
     "this_current_screen_border": colors['red'],
     "block_highlight_text_color": colors['red'],
-    # "this_screen_border": colors['foreground'],
-    # "other_current_screen_border": colors['foreground'],
-    # "other_screen_border": colors['foreground'],
-    # "this_screen_border": colors['foreground'],
-    # "decorations": [
-    #        RectDecoration(
-    #               use_widget_background=True,
-    #               radius=17,
-    #               filled=True,
-    #               colour = colors['background'],
-    #               padding_y = 5
-    #               )
-    #        ],
 }
 
 screens = [
@@ -59,13 +46,6 @@ screens = [
                        foreground=colors['background'],
                        background=colors['background']
                 ),
-                widget.TextBox(
-                    text="",
-                    padding=5,
-                    fontsize=30,
-                    foreground=colors['red'],
-                    background=colors['background']
-                ),
                 widget.Sep(
                     linewidth=0,
                     padding=5,
@@ -77,12 +57,16 @@ screens = [
                     font=xf,
                     fontsize=xx
                 ),
-                widget.TextBox(
-                    text='\uE0B0',
-                    background=colors['current_line'],
-                    foreground=colors['background'],
-                    padding=0,
-                    fontsize=25
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    foreground=colors['current_line'],
+                    background=colors['current_line']
+                ),
+                widget.CurrentLayoutIcon(
+                    custom_icon_paths=[os.path.expanduser("~/.config/qtile/icons")],
+                    **decor,
+                    scale=0.4,
                 ),
                 widget.Sep(
                     linewidth=0,
@@ -114,7 +98,7 @@ screens = [
                 ),
                 widget.TextBox(
                     font=xf,
-                    text='UPDATES:',
+                    text='\ue0dd',
                     background=colors['red'],
                     foreground=colors['background'],
                     padding=5,
@@ -126,7 +110,7 @@ screens = [
                     update_interval=1800,
                     distro="Arch",
                     display_format="{updates}",
-                    no_update_string='NO UPDATES',
+                    no_update_string='0',
                     foreground=colors['background'],
                     colour_have_updates=colors['green'],
                     colour_no_updates=colors['background'],
@@ -143,30 +127,7 @@ screens = [
                 ),
                 widget.TextBox(
                     font=xf,
-                    text='THERMAL:',
-                    background=colors['green'],
-                    foreground=colors['background'],
-                    padding=5,
-                    fontsize=xx
-                ),
-                widget.ThermalSensor(
-                    font=xf,
-                    fontsize=xx,
-                    foreground=colors['background'],
-                    background=colors['white'],
-                    threshold=90,
-                    fmt='{}',
-                    padding=5
-                ),
-                widget.Sep(
-                    linewidth=0,
-                    padding=5,
-                    foreground=colors['background'],
-                    background=colors['background']
-                ),
-                widget.TextBox(
-                    font=xf,
-                    text='MEMORY:',
+                    text='',
                     background=colors['yellow'],
                     foreground=colors['background'],
                     padding=5,
@@ -242,15 +203,6 @@ screens = [
                     padding=5,
                     foreground=colors['background'],
                     background=colors['background']
-                ),
-                widget.QuickExit(
-                    background=colors['background'],
-                    foreground=colors['red'],
-                    default_text="",
-                    fontsize=xx,
-                    padding=5,
-                    countdown_start=5,
-                    countdown_format="",
                 ),
                 widget.Sep(
                     linewidth=0,
